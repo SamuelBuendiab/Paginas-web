@@ -1,0 +1,86 @@
+.container{
+
+width: fit-content;
+margin: 50px auto;
+border: 5px solid #000;
+padding: 10px;
+border-radius: 10px;
+background-color: darkgray;
+}
+
+.tecla{
+
+width: 80px;
+height: 80px;
+border-radius: 10px;
+border: 5px solid #000;
+font-size: 20px;
+cursor: pointer;
+transition: .3s;
+}
+
+.tecla:hover{
+    background-color: black;
+    color: #fff;
+}
+
+#operacionRealizada{
+background-color: orange;
+height: 30px;
+padding: 3px;
+text-align: right;
+font-size: 20px;
+letter-spacing: 3px;
+border-radius: 5px;
+}
+
+#txtresultado{
+height: 80px;
+padding: 1px;
+border: 1px solid #ddd;
+margin: 10px 0;
+font-size: 40px;
+display: flex;
+justify-content: end;
+align-items: center;
+padding: 0 10px;
+background-color: #fff;
+border-radius: 5px;
+
+
+
+}
+
+.teclas{
+
+    width: 160px;
+    height: 80px;
+    border-radius: 10px;
+    border: 5px solid #000000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #757bc9;
+    }
+    
+    .teclas:hover{
+        background-color: black;
+        color: #ffffff;
+    }
+
+    .teclar{
+
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        border: 5px solid #000000;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .3s;
+        background-color: #acc975;
+        }
+        
+        .teclar:hover{
+            background-color: black;
+            color: #ffffff;
+        }

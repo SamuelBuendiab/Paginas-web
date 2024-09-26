@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csss/main.css">
+   
+    <title>Pagina princimal</title>
+</head>
+<body>
+    <!--menu y drop down//-->
+    <div class="topnav">
+        <a class="active" href="index2.html">Principal</a>
+        <div class="dropdown">
+            <button class="dropbtn">Catalogo 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="catalogo1.html">producto 1</a>
+              <a href="catalogo2.html">producto 2</a>
+              <a href="catalogo3.html">Producto 2</a>
+            </div>
+          </div> 
+        <a href="#acerca">Acerca</a>
+      </div>
+
+ <!--Carrucel principal//-->
+<div class="estilo">
+ <div class="slide">
+   <div class="slides">
+<!--Botones para las imagenes //-->
+    <input type="radio" name="boton-radio" id="radio1">
+    <input type="radio" name="boton-radio" id="radio2">
+    <input type="radio" name="boton-radio" id="radio3">
+<!--imagenes //-->
+          <div class="primera"> 
+          <img src="imgs/img3.jpg" alt="imagen1">
+            </div>
+            <div class="imagencar"> 
+            <img src="imgs/img2.jpg" alt="imagen2">
+             </div>
+             <div class="imagencar"> 
+              <a href="producto1.html"> 
+                 <img src="imgs/img1.jpg" alt="imagen3">
+                </a>
+                    </div>
+
+     <!--para que sea automatico //--> 
+     <div class="auto">  
+     <div class="auto1"></div> 
+     <div class="auto2"></div>   
+     <div class="auto3"></div>        
+    </div>  
+   </div>
+   <!--para cuando sea manual //--> 
+<div class="manual">
+  <label for="radio1" class="manualbot"></label>
+  <label for="radio2" class="manualbot"></label>
+  <label for="radio3" class="manualbot"></label>
+</div>
+ </div>
+</div>
+
+      
+<!--carrucel de productos segundo//-->
+<div class="todo">
+<div class="carousel">
+
+  <h2>Porductos</h2>
+<div class="carrusel-list" id="carrusel-list">
+  <!--boton izquierdo//-->
+  <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+  onclick="app.processingButton(event)">
+  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+      class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 320 512">
+      <path fill="currentColor"
+          d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+      </path>
+  </svg>
+</button>
+<div class="carrusel-track" id="track">
+
+<div class="carrusel">
+<div>
+<!--imagenes del carrucel//-->
+  <a href="producto1.html">
+  <h4> <small>imagen</small>mas</h4>
+  <picture>
+    <img src="imgs/img1.jpg" alt="imagen1">
+  </picture>
+  </a>
+</div>
+</div>
+
+<div class="carrusel">
+  <div>
+  
+    <a href="#algo si algo">
+    <h4> <small>imagen</small>mas</h4>
+    <picture>
+      <img src="imgs/img2.jpg" alt="imagen2">
+    </picture>
+    </a>
+  </div>
+  </div>
+
+  <div class="carrusel">
+    <div>
+    
+      <a href="#algo si algo">
+      <h4> <small>imagen</small>mas</h4>
+      <picture>
+        <img src="imgs/img3.jpg" alt="imagen3">
+      </picture>
+      </a>
+    </div>
+    </div>
+
+    <div class="carrusel">
+      <div>
+    <a href="#algo si algo">
+      <h4> <small>imagen</small>mas</h4>
+      <picture>
+        <img src="imgs/img4.jpg" alt="imagen4">
+      </picture>
+      </a>
+    </div>
+    </div>
+
+    <div class="carrusel">
+      <div>
+    <a href="#algo si algo">
+      <h4> <small>imagen</small>mas</h4>
+      <picture>
+        <img src="imgs/img5.jpg" alt="imagen5">
+      </picture>
+      </a>
+    </div>
+    </div>
+
+    <div class="carrusel">
+      <div>
+    <a href="#algo si algo">
+      <h4> <small>imagen</small>mas</h4>
+      <picture>
+        <img src="imgs/img6.jpg" alt="imagen6">
+      </picture>
+      </a>
+    </div>
+    </div>
+
+</div>
+<!--boton derecho//-->
+<button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+</div>
+</div>
+</div>
+</div>
+
+<!--pie de pagina//-->
+<footer>
+
+<p> algo va aca pero no se que pueda ser <br>
+  <a href="#correo">correo</a>
+</p>
+
+</footer>
+<!--scrip para hacer el principal automatioco/ literalmente solo es si llega a la cantidad max se devulve y cambia cada x segs//-->
+<script type="text/javascript">
+var contador = 2;
+setInterval(function() {
+  document.getElementById('radio'+contador).checked = true;
+  contador++;
+  if(contador > 3){
+    contador = 1;
+  }
+}, 5000
+);
+</script>
+<script src="java/main.js"></script>
+</body>
+</html>

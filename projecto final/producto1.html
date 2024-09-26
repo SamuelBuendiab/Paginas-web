@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csss/productos.css">
+    <title>productos</title>
+</head>
+<body>
+ <!--menu y drop down//-->
+ <div class="topnav">
+    <a class="active" href="index2.html">Principal</a>
+    <div class="dropdown">
+        <button class="dropbtn">Catalogo 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="catalogo1.html">producto 1</a>
+          <a href="catalogo2.html">producto 2</a>
+          <a href="catalogo3.html">Producto 2</a>
+        </div>
+      </div> 
+    <a href="#acerca">Acerca</a>
+  </div>
+
+ <!--imagenes del produto y estrellas//-->
+
+ <div class="container   single-producto">
+    <div class="linea">
+        <div class="columna-2">
+            <img src="imgs/img1.jpg" width="100%" id="imgproducto">
+            
+               <div class="columna-abajo">
+              <div class="pequeno">
+                <img src="imgs/img1.jpg"  width="100%" class="small">
+              </div>
+
+              <div class="pequeno">
+                <img src="imgs/img2.jpg"  width="100%" class="small">
+              </div>
+
+                <div class="pequeno">
+                    <img src="imgs/img3.jpg"  width="100%" class="small">
+                  </div>
+
+                  <div class="pequeno">
+                    <img src="imgs/img4.jpg"  width="100%" class="small">
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="columna-2">
+
+                <p>Maquillaje / o lo que sea</p>
+                <h1>Maquillaje</h1>
+                <h4>$20.000</h4>
+<!--por si quieres hacer ropa o algo solo quitas el comentario y sirve o deberia
+                <select>
+                    <option value="">tamano</option>
+                    <option value="">s</option>
+                    <option value="">m</option>
+                    <option value="">l</option>
+                    <option value="">xl</option>
+                </select>
+//-->
+                     <input type="number" value="1">
+                     <a href="#nada" class="btn">Carro</a>
+                     <h3>detalles <i class="l l-algo"></i></h3>
+                     <br>
+                     <p>aqui va la descricion del producto para que funciones</p>
+              </div>
+
+              <div class="estre">
+
+                <div class="estrellas">
+
+                    <input type="radio" id="uno" name="rate" value="1">
+                    <label for="uno"></label>
+
+                    <input type="radio" id="dos" name="rate" value="1">
+                    <label for="dos"></label>
+
+                    <input type="radio" id="tres" name="rate" value="1">
+                    <label for="tres"></label>
+
+                    <input type="radio" id="cuatro" name="rate" value="1">
+                    <label for="cuatro"></label>
+
+                    <input type="radio" id="cinco" name="rate" value="1">
+                    <label for="cinco"></label>
+
+
+
+
+                </div>
+
+
+
+              </div>
+
+
+              
+
+        </div>
+    </div>
+</div>
+
+
+    <!--pie de pagina//-->
+<footer>
+
+    <p> algo va aca pero no se que pueda ser <br>
+      <a href="#correo">correo</a>
+    </p>
+    
+    </footer>
+
+
+       <!--hace funcionar la seleccion de las imagenes//-->
+<script>
+
+var imagen = document.getElementById("imgproducto");
+var imagenpeque = document.getElementsByClassName("small");
+
+imagenpeque[0].onclick = function(){
+    imagen.src = imagenpeque[0].src;
+}
+imagenpeque[1].onclick = function(){
+    imagen.src = imagenpeque[1].src;
+}
+imagenpeque[2].onclick = function(){
+    imagen.src = imagenpeque[2].src;
+}
+imagenpeque[3].onclick = function(){
+    imagen.src = imagenpeque[3].src;
+}
+
+imagenpeque[4].onclick = function(){
+    imagen.src = imagenpeque[4].src;
+}
+
+</script>
+
+
+
+</body>
+</html>

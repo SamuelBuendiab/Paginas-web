@@ -1,0 +1,198 @@
+/* color fondo */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* estilo de los hipervinculos dentro de as opciones */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* color del cuando se pasa el mouse por encima */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* color al link oprimido */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* todo lo que hay en body */
+  body {
+    height: 100vh;
+    width: 100%;
+    padding: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: paleturquoise;
+  
+    
+  }
+    /* Color del fondo menu dropdown */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+    /* cosas para que se vea bonito el menu de caida */
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+    /* funcionamiento drop down */
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+    /* Funcionamiento del boron y color */
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+    /* cuando se pasa por encima */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+    /* fondo de las opciones */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+    /* letras de las opciones */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  /* color cuando se le pasa por encima */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+/* etiquieta h1 */
+
+h1{
+text-align: center;
+padding: auto;
+}
+/* como los parametros de la caja */
+.container{
+  max-width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 40px;
+  place-items: center;
+  height: 100vh;
+  margin: auto;
+  padding: 50px;
+
+}
+/* la caja como tal */
+.caja{
+  background: white;
+  text-align: center;
+  box-shadow: -1px 0 5px 5px rgba(0,0,0,0.5);
+}
+/* la imgen */
+.container img{
+  width: 70%;
+  height: 100%;
+}
+/* texto normal */
+.text{
+  padding: 20px;
+}
+/* texto h3 */
+.text h3{
+  font-size: 15px;
+}
+/* texto p */
+.text p{
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 0 10px 0;
+}
+/* texto h2 */
+.text h2{
+  font-size: 18px;
+  color: aqua;
+}
+/* color del boton en general */
+.button{
+  background-color: red ;
+  padding: 15px;
+}
+
+/* funcionamiento del boton */
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+/* para cambiar el color de el boton que quieres en especifico sea el primero segundo terceroy etc */
+.caja:nth-child(2) .button{
+  background-color: blue;
+}
+
+.caja:nth-child(3) .button{
+  background-color: pink;
+}
+
+/* hacerlo reactivo */
+@media only screen and (max-width:768px){
+
+.container{
+  grid-template-columns: repeat(1,1fr);
+}
+
+}
+
+
+
+  /* pie de pagina */
+  
+  footer {
+    position: relative;
+    display: absolute;
+    text-align: center;
+    padding: 13px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }

@@ -1,0 +1,44 @@
+
+
+    
+h1{
+	margin: 0;
+	padding: 0;
+	color: rgb(255, 255, 255);
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-shadow: rgb(240, 141, 12);
+
+}
+
+input{
+    padding: 1%;
+    margin: 1%;
+    width: 50%;
+    
+}
+
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:("img1.jpg");
+    background-color: darkslateblue;
+    background-position: absolute;
+    font-style: italic;
+    text-shadow: rgb(240, 141, 12);
+    
+  }
+
+ button{
+    position: right;
+    color:brown;
+    size: 50px;
+ }
+
+ #sub{
+    position: left;
+ }
+

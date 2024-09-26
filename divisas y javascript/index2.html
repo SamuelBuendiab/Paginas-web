@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de unidades</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>Converidor de divisas y reloj mundial</h1>
+
+    <div class="contenedor"> 
+<h2>Conversor de divisas</h2>
+
+<div class="fila">
+<span>Convertir en</span>
+<select name="divisa1" id="divisa1">
+    <option value="dolar">Dolar</option>
+    <option value="euro">euro</option>
+    <option value="yen">Yen</option>
+    <option value="pesos">Pesos(cop)</option>
+</select>
+<span> a </span>
+<select name="divisa2" id="divisa2">
+    <option value="dolar">Dolar</option>
+    <option value="euro">euro</option>
+    <option value="yen">Yen</option>
+    <option value="pesos">Pesos(cop)</option>
+</select>
+    </div>
+<input type="number" id="valor" placeholder="valor">
+<div class="resultado" id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
+
+<div class="tiempo">
+<div id="current_date"></p>
+    <script>
+    document.getElementById("current_date").innerHTML = Date();
+    </script>
+
+</div>
+
+
+<footer>
+    <h4>
+    <p>Tarea: Semana 4 javascrip</p>
+    <p>Creado por : Samuel David Buendia Benavides</p>
+</h4>
+</footer>
+</body>
+</html>

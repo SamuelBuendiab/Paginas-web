@@ -1,0 +1,279 @@
+/* color fondo */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* estilo de los hipervinculos dentro de as opciones */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* color del cuando se pasa el mouse por encima */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* color al link oprimido */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* todo lo que hay en body */
+  body {
+    height: 100vh;
+    width: 100%;
+    padding: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: paleturquoise;
+  
+    
+  }
+    /* Color del fondo menu dropdown */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+    /* cosas para que se vea bonito el menu de caida */
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+    /* funcionamiento drop down */
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+    /* Funcionamiento del boron y color */
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+    /* cuando se pasa por encima */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+    /* fondo de las opciones */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+    /* letras de las opciones */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  /* color cuando se le pasa por encima */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+ /* tama;o del contenedor */
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
+
+}
+ /* para que aparesca una imagen arriba y la otras abajo */
+.linea{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+ /* imagen grande padding */
+.single-producto{
+    margin-top: 80px;
+}
+
+ /* imagenes de abajo */
+.columna-abajo{
+    display: flex;
+    justify-content: space-around;
+}
+ /* resto de imagenes */
+.columna-2 img{
+    max-width: 100%;
+    padding: 10px 0;
+}
+ /* imagenes pequenas pointer */
+.pequeno{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+ /* para que no esten pegadas */
+.single-producto .columna-2 img{
+    padding: 0;
+}
+
+.single-producto .columna-2{
+    padding-block-start: 20px;
+}
+
+ /* tamano de las imagenes */
+.columna-2{
+    flex-basis: 20px;
+    min-width: 400px;
+}
+ /* los h1 */
+.columna-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    marker-start: 25px 0;
+}
+
+ /* los select que estan como comentario */
+.single-producto select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+ /* los h4 */
+.single-producto h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+ /* los numeritos por si le quieres cambiar algo */
+.single-producto input{
+    width: 50px;
+    height: 40px;
+    padding-block-start: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+ /* cundo lo seleccionan */
+input:focus{
+    outline: none;
+}
+ /* que no hayan links notables */
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+
+.single-producto .l{
+color: gold;
+margin-left: 10px;
+}
+ /* descripcion del texto descriptibo del producto */
+p{
+    color: black;
+}
+ /* Boton funcionamiento y estilo */
+.btn{
+    display: inline-block;
+    background: orange;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5;
+
+}
+ /* cuando le pasas por encima */
+.btn:hover{
+    background: darkorange;
+}
+
+
+/* posicionde las estrellas */
+.estre{
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-120%, -100%);
+}
+/* mas posicionamento */
+.estre  .estrellas{
+    height: 50px;
+    width: 500px;
+    text-align: center;
+}
+/* para que o aparezca el boton */
+.estrellas input{
+    display: none;
+}
+/* darles color cuando no estan seleccionadas y algo mas de posicion */
+.estrellas label{
+    float: right;
+    font-size: 50px;
+    color: darkgray;
+    margin: 0 5px;
+    text-shadow: 1px 1px black;
+}
+
+
+/* para que tenga forma de estrella */
+
+.estrellas label::before{
+    content: '★';
+}
+/* Para que al seleccionar cambien de color */
+
+.estrellas input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px black;
+}
+
+/* cuando les pases por encima cambie de color y no aya necesidad de coloread una por una */
+
+.estrellas:not(:checked) > label:hover,
+.estrellas:not(:checked) > label:hover  ~ label{
+    color: gold;
+    text-shadow: 1px 1px black;
+}
+
+
+
+    /* pie de pagina */
+/* solores y etc */
+  
+    footer {
+        position: relative;
+        display: relative;
+        text-align: center;
+        padding: 13px;
+        background-color: DarkSalmon;
+        color: white;
+      }
+      
+      footer a {
+        text-decoration: none;
+      }

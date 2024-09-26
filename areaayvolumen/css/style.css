@@ -1,0 +1,72 @@
+.default_form{
+
+	display: none;
+}
+
+#main_container{
+		display: flex;
+		height: 94vh;
+		font-family: 'Times New Roman', Times, serif;
+		
+}
+
+#button-submit{
+	color:rgb(216, 233, 248);
+}
+
+#left{
+	flex: 50%;
+	background-color: lightblue;
+	padding: 3%;
+	transition: flex 1s;
+}
+#right{
+	flex: 50%;
+	text-align: center;
+	background-color: lightcoral;
+	padding: 3%;
+	transition: flex 1s;
+}
+
+#right h1{
+	color: #030303;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
+}
+
+#right:hover{
+	flex: 80%;
+}
+#left:hover{
+	flex: 80%;
+}
+
+header{
+	background-color: lightgreen;
+	margin: 1px;
+	padding: 1px;
+}
+
+header h1{
+	margin: 0;
+	padding: 0;
+	color: rgb(5, 5, 5);
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+
+}
+.imgs{
+	float: right;
+	width: 200px;
+	margin-right: 200px;
+}
+
+
+
+
+
+
+

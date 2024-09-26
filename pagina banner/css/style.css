@@ -1,0 +1,42 @@
+header{
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+.Container{
+    text-align: center;
+}
+
+.pie{
+    text-align: center;
+    padding: 20px;
+}
+
+.deck{
+align-items: center;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+.vita{
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+.psp{
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+
+
+h1{
+    font-family: 'Franklin Gothic Medium';
+    color: blue;
+}
+
+.banner{
+color: white;
+    font-size: 40px;
+
+}
